@@ -1,0 +1,30 @@
+.footer {
+    position: relative;
+    padding-top: 210px;
+    background-image: url('/src/img/footer-bg.webp');
+    height: 550px;
+    display: flex;
+    background-size: cover;
+
+    &__nav {
+        min-width: 770px;
+        display: flex;
+        justify-content: space-between;
+
+        &-link {
+            a {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__copyrights {
+        margin-top: 40px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+}

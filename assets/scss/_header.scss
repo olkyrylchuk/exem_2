@@ -1,0 +1,227 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 53px 0 50px;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &-nav {
+            min-width: 515px;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &-link {
+            font-family: "Source Sans Pro";
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            &::before {
+                content: "";
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                align-items: center;
+                text-align: center;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                margin-right: 14px;
+            }
+
+            &:hover::before {
+                background-color: #fff;
+                transition: all 0.3s ease-in;
+            }
+        }
+
+        &-social {
+            display: flex;
+            justify-content: space-between;
+            max-width: 160px;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__title-wrapper {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-family: "Montserrat"sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 98px;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h3 {
+            font-family: "Montserrat"sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.3em;
+            color: #ffffff;
+        }
+    }
+
+    .arrow {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        background-image: url('/src/img/hero_bg.webp');
+        background-size: cover;
+        height: 100vh;
+
+        .container {
+            max-width: 650px;
+            padding: 0 35px;
+            width: 100%;
+        }
+
+        &__navigation {
+            &-nav {
+                display: none;
+                position: absolute;
+                align-self: center;
+                top: 200px;
+                width: 100%;
+                max-width: 580px;
+
+                &.active {
+                    display: inherit;
+                    width: 100%;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 400px;
+                    margin: 0 auto;
+                }
+            }
+
+            &-social {
+                display: none;
+
+                &.active {
+                    display: inherit;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        &__title-wrapper {
+            h1 {
+                text-align: center;
+                font-size: 60px;
+                max-width: 300px;
+                line-height: 1.2;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+
+            &.active {
+                h1 {
+                    display: none;
+                }
+
+                h3 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hamburger-icon {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+
+
+    .hamburger {
+        width: 40px;
+        height: 4px;
+        transform: translate(-50%, -50%);
+        transition: 0.5s;
+        background-color: #fff;
+        display: inline-block;
+
+        &::before,
+        &::after {
+            content: "";
+            width: 40px;
+            height: 4px;
+            position: absolute;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+
+        &::before {
+            top: -12px;
+        }
+
+        &::after {
+            top: 12px;
+        }
+    }
+}
