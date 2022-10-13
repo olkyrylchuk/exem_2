@@ -137,12 +137,17 @@ body {
                 position: absolute;
                 align-self: center;
                 top: 200px;
-                width: 100%;
                 max-width: 580px;
+
+                a {
+                    font-size: 20px;
+                }
 
                 &.active {
                     display: inherit;
                     width: 100%;
+                    left: 50%;
+                    margin-left: -280px;
                 }
 
                 ul {
@@ -158,17 +163,18 @@ body {
                 display: none;
 
                 &.active {
-                    display: inherit;
+                    display: flex;
                     position: absolute;
-                    top: 0;
-                    right: 0;
+                    left: 50%;
+                    bottom: 10%;
+                    margin-left: -90px;
                 }
             }
         }
 
         &__title-wrapper {
             h1 {
-                text-align: center;
+                display: flex;
                 font-size: 60px;
                 max-width: 300px;
                 line-height: 1.2;
@@ -187,6 +193,10 @@ body {
                     display: none;
                 }
             }
+        }
+
+        .arrow {
+            visibility: hidden;
         }
     }
 
