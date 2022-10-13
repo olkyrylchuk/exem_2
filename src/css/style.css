@@ -396,7 +396,7 @@ body {
 }
 
 .news {
-  background: url("/src/img/Background.webp");
+  background: url("/src/img/Background.jpg");
   background-size: cover;
   width: 100%;
   height: 1035px;
@@ -566,7 +566,7 @@ body {
 .footer {
   position: relative;
   padding-top: 210px;
-  background-image: url("/src/img/footer-bg.webp");
+  background-image: url("src/img/footer-bg.jpg");
   height: 550px;
   display: flex;
   background-size: cover;
