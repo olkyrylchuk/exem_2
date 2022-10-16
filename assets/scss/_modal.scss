@@ -56,7 +56,7 @@
         justify-content: space-between;
 
         &-contact {
-            min-width: 290px;
+            min-width: 310px;
             margin-right: 55px;
 
             li {
@@ -70,6 +70,10 @@
 
                 &+li {
                     margin-top: 25px;
+                }
+
+                i {
+                    margin-right: 10px;
                 }
 
                 a {
@@ -172,14 +176,8 @@
 
         .modal__wrapper-form {
             max-width: 310px;
-
-            .form__input {
-                width: 100%;
-            }
         }
     }
-
-
 }
 
 @media (max-width: 576px) {
@@ -192,7 +190,13 @@
                     font-size: 30px;
                 }
 
-                .modal__wrapper {}
+                li {
+                    font-size: 14px;
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }

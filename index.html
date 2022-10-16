@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/panzoom.css">
+    <link rel="stylesheet" href="librares/fontawesome-free-5.15.4-desktop/svgs/brands/500px.svg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&family=Open+Sans&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
@@ -236,15 +239,20 @@
                                 <div class="modal__wrapper">
                                     <div class="modal__wrapper-contact">
                                         <ul>
-                                            <li>91 Nolan Extensions Suite 670
+                                            <li class="location">
+                                                <i class="fas fa-map-marker-alt form__icon"></i>
+                                                91 Nolan Extensions Suite 670
                                             </li>
                                             <li>
+                                                <i class="fas fa-phone form__icon"></i>
                                                 <a href="tel: +79000000000">+7900000000</a>
                                             </li>
                                             <li>
+                                                <i class="fas fa-inbox form__icon"></i>
                                                 <a href="mailto: example@mail.ru">example@mail.ru</a>
                                             </li>
                                             <li>
+                                                <i class="far fa-clock form__icon"></i>
                                                 From 07:05AM to 19:30PM
                                             </li>
                                         </ul>
@@ -257,8 +265,9 @@
                                         </div>
                                         <div class="form__item">
                                             <label for="formEmail" class="form__lable"></label>
-                                            <input id="formEmail" type="text" name="email"
-                                                class="form__input _req _email" placeholder="e-mail">
+                                            <input id="email" type="email" name="email" class="form__input _req _email"
+                                                placeholder="e-mail">
+                                            <h6 id="result"></h6>
                                         </div>
                                         <button type="submit" class="form__button">submit</button>
                                     </div>

@@ -33,9 +33,7 @@
 
 .slick-prev:before {
     content: url("/src/img/Left.svg");
-    position: absolute;
-    right: 60px;
-    margin-right: 30px;
+    margin-left: -30px;
 }
 
 [dir='rtl'] .slick-prev:before {
@@ -53,8 +51,7 @@
 
 .slick-next:before {
     content: url("/src/img/Right.svg");
-    position: absolute;
-    right: -45px;
+    margin-right: 20px;
 }
 
 [dir='rtl'] .slick-next:before {

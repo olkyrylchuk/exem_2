@@ -295,9 +295,7 @@ body {
 
 .slick-prev:before {
   content: url("/src/img/Left.svg");
-  position: absolute;
-  right: 60px;
-  margin-right: 30px;
+  margin-left: -30px;
 }
 
 [dir=rtl] .slick-prev:before {
@@ -315,8 +313,7 @@ body {
 
 .slick-next:before {
   content: url("/src/img/Right.svg");
-  position: absolute;
-  right: -45px;
+  margin-right: 20px;
 }
 
 [dir=rtl] .slick-next:before {
@@ -653,7 +650,7 @@ body {
 }
 
 .modal__wrapper-contact {
-  min-width: 290px;
+  min-width: 310px;
   margin-right: 55px;
 }
 
@@ -669,6 +666,10 @@ body {
 
 .modal__wrapper-contact li + li {
   margin-top: 25px;
+}
+
+.modal__wrapper-contact li i {
+  margin-right: 10px;
 }
 
 .modal__wrapper-contact li a {
@@ -928,16 +929,16 @@ body {
   .about::before {
     content: "";
     width: 240px;
-    height: 175px;
-    top: 230px;
+    height: 150px;
+    top: 145px;
   }
 
   .about::after {
     content: "";
     position: absolute;
     width: 240px;
-    height: 171px;
-    bottom: 155px;
+    height: 160px;
+    bottom: 310px;
   }
 
   .about__second-wrapper {
@@ -1021,10 +1022,6 @@ body {
 
   .container .modal__wrapper-form {
     max-width: 310px;
-  }
-
-  .container .modal__wrapper-form .form__input {
-    width: 100%;
   }
 }
 
@@ -1144,5 +1141,13 @@ body {
 
   .footer .container .modal-body h2 {
     font-size: 30px;
+  }
+
+  .footer .container .modal-body li {
+    font-size: 14px;
+  }
+
+  .footer .container .modal-body li a {
+    font-size: 14px;
   }
 }

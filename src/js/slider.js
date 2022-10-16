@@ -1,5 +1,6 @@
 // Слайдер для блока news
 $(".news__slider").slick({
+  autoplay: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   arrows: true,
