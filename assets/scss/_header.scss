@@ -139,6 +139,11 @@ body {
                 top: 200px;
                 max-width: 580px;
 
+                ul {
+                    width: 100%;
+                    text-align: center;
+                }
+
                 a {
                     font-size: 20px;
                 }
@@ -206,8 +211,6 @@ body {
         cursor: pointer;
     }
 
-
-
     .hamburger {
         width: 40px;
         height: 4px;
@@ -232,6 +235,17 @@ body {
 
         &::after {
             top: 12px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+
+        &__title-wrapper {
+            h3 {
+                text-align: center;
+            }
         }
     }
 }

@@ -572,8 +572,13 @@ body {
   background-size: cover;
 }
 
+.footer .container {
+  width: 770px;
+}
+
 .footer__nav {
-  min-width: 770px;
+  max-width: 770px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -774,7 +779,7 @@ body {
     content: "";
     width: 410px;
     height: 365px;
-    bottom: 200px;
+    bottom: 55px;
   }
 
   .about__second-wrapper {
@@ -822,6 +827,11 @@ body {
     align-self: center;
     top: 200px;
     max-width: 580px;
+  }
+
+  .header__navigation-nav ul {
+    width: 100%;
+    text-align: center;
   }
 
   .header__navigation-nav a {
@@ -911,17 +921,23 @@ body {
     top: 12px;
   }
 
+  .about h2 {
+    margin-bottom: 90px;
+  }
+
   .about::before {
     content: "";
     width: 240px;
     height: 175px;
-    top: 310px;
+    top: 230px;
   }
 
   .about::after {
     content: "";
+    position: absolute;
     width: 240px;
     height: 171px;
+    bottom: 155px;
   }
 
   .about__second-wrapper {
@@ -952,12 +968,181 @@ body {
     font-size: 38px;
   }
 
+  .gallery {
+    margin-bottom: 140px;
+  }
+
+  .gallery__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "el-1 el-1" "el-1 el-1" "el-2 el-3" "el-4 el-5";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 60px;
+  }
+
+  .gallery__items .el-1 {
+    grid-area: el-1;
+  }
+
+  .gallery__items .el-2 {
+    grid-area: el-2;
+  }
+
+  .gallery__items .el-3 {
+    grid-area: el-3;
+  }
+
+  .gallery__items .el-4 {
+    grid-area: el-4;
+  }
+
+  .gallery__items .el-5 {
+    grid-area: el-5;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
   .container .modal__wrapper {
     flex-direction: column;
     width: 600px;
   }
 
+  .container .modal__wrapper .form__input {
+    width: 80%;
+  }
+
   .container .modal-body {
     width: 600px;
+  }
+
+  .container .modal__wrapper-form {
+    max-width: 310px;
+  }
+
+  .container .modal__wrapper-form .form__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__title-wrapper h3 {
+    text-align: center;
+  }
+
+  .about img {
+    margin-bottom: 50px;
+  }
+
+  .about::before {
+    content: "";
+    top: 140px;
+    width: 330px;
+    height: 270px;
+    margin-bottom: 100px;
+  }
+
+  .about::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 470px;
+    background-color: #7E5AFF;
+    width: 330px;
+    height: 270px;
+    z-index: 0;
+  }
+
+  .about__title {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    color: #2C4058;
+  }
+
+  .about__first-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 375px;
+  }
+
+  .about__first-wrapper .about__first-img {
+    max-width: 630px;
+    max-height: 470px;
+    z-index: 1;
+  }
+
+  .about__second-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about__second-wrapper .about__second-img {
+    position: absolute;
+    bottom: 430px;
+    max-width: 355px;
+    max-height: 264px;
+  }
+
+  .about .text {
+    padding-left: inherit;
+    max-width: 476px;
+  }
+
+  .about .text-subtitle {
+    font-size: 18px;
+  }
+
+  .about .text-title {
+    font-size: 30px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 30px;
+    height: 350px;
+  }
+
+  .footer .container {
+    max-width: 370px;
+    height: 100%;
+  }
+
+  .footer__nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .footer__nav .logo {
+    margin-bottom: 30px;
+  }
+
+  .footer__copyrights {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .footer .container .modal-body {
+    max-width: 350px;
+  }
+
+  .footer .container .modal-body h2 {
+    font-size: 30px;
   }
 }

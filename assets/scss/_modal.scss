@@ -155,15 +155,45 @@
 
 @media (max-width: 768px) {
     .container {
-        // max-width: 700px;
+        max-width: 700px;
 
         .modal__wrapper {
             flex-direction: column;
             width: 600px;
+
+            .form__input {
+                width: 80%;
+            }
         }
 
         .modal-body {
             width: 600px;
+        }
+
+        .modal__wrapper-form {
+            max-width: 310px;
+
+            .form__input {
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .footer {
+        .container {
+            .modal-body {
+                max-width: 350px;
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                .modal__wrapper {}
+            }
         }
     }
 }

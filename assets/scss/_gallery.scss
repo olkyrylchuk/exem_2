@@ -74,3 +74,42 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .gallery {
+        margin-bottom: 140px;
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: "el-1 el-1"
+                "el-1 el-1"
+                "el-2 el-3"
+                "el-4 el-5";
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            margin-bottom: 60px;
+
+            .el-1 {
+                grid-area: el-1;
+            }
+
+            .el-2 {
+                grid-area: el-2;
+            }
+
+            .el-3 {
+                grid-area: el-3;
+            }
+
+            .el-4 {
+                grid-area: el-4;
+            }
+
+            .el-5 {
+                grid-area: el-5;
+            }
+        }
+    }
+}
